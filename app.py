@@ -46,7 +46,11 @@ def profile():
 def version():
     return {
         "version": "v1.0.1"
-    }      
+    }  
+
+@app.route("student/<name>")
+def student(name):
+    return 'Student name is ' + name.capitalize()       
 
 @app.route("/")
 def hello():
