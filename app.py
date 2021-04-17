@@ -48,7 +48,7 @@ def version():
         "version": "v1.0.1"
     }  
 
-@app.route("student/<name>")
+@app.route("/student/<name>")
 def student(name):
     return 'Student name is ' + name.capitalize()       
 
